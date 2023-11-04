@@ -1,0 +1,34 @@
+body{
+    background-color: azure;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+}
+header{
+    background-color: cadetblue;
+    text-align: center;
+}
+h1{
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+nav .opciones{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+nav .opciones li{
+    list-style: none;
+}
+nav .opciones li a{
+    background-color: white;
+    padding: 10px 50px;
+    border-radius: 10px;
+    border: 2px solid cadetblue;
+    text-decoration: none;
+    color: cadetblue;
+}
+.info-satelite{
+    background-color: white;
+    text-align: center;
+}
