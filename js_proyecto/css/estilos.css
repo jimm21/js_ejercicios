@@ -1,0 +1,162 @@
+/* -------------------------------------------GENERAL------------------------------------------- */
+html {
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    background-color: black;
+    color: aliceblue;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/* -------------------------------------------HEADER------------------------------------------- */
+header{
+    display: flex;
+}
+/* LOGO */
+.logo{
+    width: 40%;
+    margin: 10px;
+}
+#logo-img{
+    width: 20px;
+    height: 20px;
+}
+/* NAVBAR */
+nav{
+    width: 60%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* -------------------------------------------MAIN------------------------------------------- */
+
+/* INICIAL */
+.fondo{
+    margin: 0;
+    width: 100%;
+    height: 565px;
+    background-size: cover;
+    /* background-image: url(https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fondo .fondo-text{
+    height: 80%;
+    text-align: center;
+}
+.fondo .buttons{
+    display: flex;
+    height: 20%;
+}
+.fondo h1{
+    font-size: 50px;
+}
+.fondo button{
+    color: aliceblue;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* https://hackernoon.com/es/los-24-mejores-css-free-to-use-buttons-with-codepen-examples */
+    border: 2px solid RoyalBlue;
+    border-radius: 0px;
+    padding: 16px 34px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 RoyalBlue;
+    transition: ease-out 0.4s;
+    bottom: 20px;
+}
+.fondo button:hover{
+    box-shadow: inset 0 100px 0 0 RoyalBlue;
+}
+/* VIDEO */
+.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.video h1{
+    padding: 20px;
+}
+.video iframe{
+    width: 60%;
+    height: 450px;
+    margin: 30px;
+}
+/* CHAT SPACY */
+.chat-spacy{
+    background-color: aliceblue;
+    color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+}
+.chat-spacy h1{
+    font-size: 40px;
+    margin-bottom: 0;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.chat-spacy h2{
+    margin-top: 0;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.chat-spacy figure{
+    grid-column: 3/4;
+    grid-row: 1/4;
+}
+.chat-spacy .chat-elements{
+    margin: 20px;
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+#spacy-img{
+    width: 100%;
+}
+.chat-spacy .chat-elements .respuesta-mensaje{
+    width: 100%;
+    min-height: 260px;
+    letter-spacing: 1px;
+    margin: 10px;
+}
+.chat-spacy .chat-elements .escribir-mensaje{
+    display: flex;
+    justify-content: center;
+}
+.chat-spacy .chat-elements .escribir-mensaje textarea{
+    border-radius: 5px;
+    border: 1px solid MidnightBlue;
+}
+.chat-spacy .chat-elements .escribir-mensaje button{
+    border-radius: 5px;
+    border: none;
+    background-color: MidnightBlue;
+    color: aliceblue;
+    margin-inline: 5px;
+    cursor: pointer;
+}
+/* -------------------------------------------FOOTER------------------------------------------- */
+
+footer figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .socials{
+    display: flex;
+}
+footer .socials i{
+    padding-inline: 20px;
+    font-size: 20px;
+}
+
+

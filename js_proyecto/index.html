@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página espacial</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/slider.js"></script>
+    <script src="js/buttons.js"></script>
+    <script src="js/chat_spacy.js"></script>
+</head>
+<body>
+    <header>
+        <figure class="logo">
+            <img id="logo-img" src="https://www.quanticcroven.com/wp-content/uploads/Icon-Space-img.png" alt="Logo espacial">
+        </figure>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Sistema Solar</a>
+            <a href="#">Noticias</a>
+        </nav>
+    </header>
+    <main>
+        <section class="fondo">
+            <article class="fondo-text">
+                <h1>PASIÓN POR EL ESPACIO</h1>
+                <h2>Explora el espacio de una manera divertida</h2>
+            </article>
+            
+            <div class="fondo-buttons">
+                <button onclick=goToVideo() id="ir-video">Ver más</button>
+                <button onclick=goToChat() id="ir-chat">Chat with Spacy</button>
+            </div>
+        </section>
+        <article class="video">
+            <h1>Video acerca del espacio</h1>
+            <iframe width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/vl6jn-DdafM?si=W7FFH1r3rodl0Ohz" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+        </article>
+        <article class="chat-spacy">
+            <h1>Habla con Spacy 💬</h1>
+            <h2>Preguntela lo que quieras saber acerca del espacio. Ella te responderá con gusto!, es una sabelotodo.</h2>
+            <figure>
+                <img id="spacy-img" src="https://images.vexels.com/media/users/3/301765/isolated/preview/5a066cd9f846f015c19ba51410409430-personaje-de-kawaii-de-dibujos-animados-de-gato-espacial.png" alt="Spacy">
+            </figure>
+            <article class="chat-elements">
+                <div class="respuesta-mensaje">
+
+                </div>
+                <div class="escribir-mensaje">
+                    <textarea name="mensaje-user" id="mensaje-user" cols="100" rows="2" placeholder="Escribe una pregunta"></textarea>
+                    <button onclick=enviarMensaje() id="enviar">Enviar</button>
+                </div>
+                
+            </article>
+        </article>
+    </main>
+    <footer>
+        <figure>
+            <img id="logo-img" src="https://www.quanticcroven.com/wp-content/uploads/Icon-Space-img.png" alt="Logo espacial">
+            <p>PasiónPorElEspacio.com</p>
+        </figure>
+        <figure class="socials">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-youtube"></i>
+            <i class="fa fa-linkedin"></i>
+        </figure>
+        
+    </footer>
+</body>
+</html>

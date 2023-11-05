@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChatGPT Test</title>
+</head>
+<body>
+
+<textarea id="prompt" placeholder="Enter your prompt"></textarea>
+<button id="send">Send</button>
+<div id="response"></div>
+
+<script>
+document.getElementById('send').addEventListener('click', function() {
+    const promptText = document.getElementById('prompt').value;
+    fetch('https://api.openai.com/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+            Authorization: 'Bearer API_KEY',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            "model": "gpt-3.5-turbo",
+            "messages": [
+                {
+                    role: "system",
+                    content: "You are a helpful assistant. Given the context, provide answers to the questions. At the end of your answer always say: Mi querido amigo",            
+                },
+                {
+                    role: "user",
+                    content: promptText,            
+                },
+            ], 
+            "temperature": 0,
+            "max_tokens":500
+        })
+    }).then((response) => {
+        if (response.ok) {
+            response.json().then((data) => {
+                document.getElementById('response').innerText = data.choices[0].message.content;
+            });
+        }
+    });
+});
+</script>
+
+</body>
+</html>
